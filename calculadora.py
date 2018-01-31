@@ -12,7 +12,7 @@ def dividir(a,b):
     return float(a)/float(b)
 
 if(len(sys.argv) != 4):
-    print ("uso: python3 calculadora.py funcion operando1 operando2")
+    sys.exit("uso: python3 calculadora.py funcion operando1 operando2")
 else:
     funcion = sys.argv[1]
     op1 = sys.argv[2]
