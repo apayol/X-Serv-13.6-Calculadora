@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-
+# ADRIÁN PAYOL MONTERO
 import sys
 
-if len(sys.argv) != 4:
+if len(sys.argv) != 4:    # han de ser 4 argumentos	
     sys.exit("uso: python3 calculadora.py función operando1 operando2")
 
-_, funcion, op1, op2 = sys.argv
+_, funcion, op1, op2 = sys.argv    # guardo los argumentos
 
 try:
     op1 = float(op1)
