@@ -24,5 +24,11 @@ else:
     elif (funcion == "multiplicar"):
         print("La multiplicación resulta: " + str(multiplicar(op1,op2)))
     elif (funcion == "dividir"):
-        print("La división resulta: " + str(dividir(op1,op2)))
-   
+        try:
+            print("La división resulta: " + str(dividir(op1,op2)))
+        except ZeroDivisionError:
+            print("División entre 0!")
+    else:
+        print("Funciones aceptadas: sumar, restar, multiplicar o dividir")
+
+
