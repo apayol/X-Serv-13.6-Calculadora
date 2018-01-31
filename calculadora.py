@@ -14,14 +14,15 @@ def dividir(a,b):
 if(len(sys.argv) != 4):
     print ("uso: python3 calculadora.py funcion operando1 operando2")
 else:
+    funcion = sys.argv[1]
     op1 = sys.argv[2]
     op2 = sys.argv[3]
-    if (sys.argv[1] == "sumar"):
+    if (funcion == "sumar"):
         print("La suma resulta: " + str(sumar(op1,op2)))
-    elif (sys.argv[1] == "restar"):
+    elif (funcion == "restar"):
         print("La resta resulta: " + str(restar(op1,op2)))
-    elif (sys.argv[1] == "multiplicar"):
+    elif (funcion == "multiplicar"):
         print("La multiplicación resulta: " + str(multiplicar(op1,op2)))
-    elif (sys.argv[1] == "dividir"):
+    elif (funcion == "dividir"):
         print("La división resulta: " + str(dividir(op1,op2)))
    
